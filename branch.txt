@@ -22,3 +22,7 @@ git encourages people to use branch frequently ~
 如果本来在typing一个file，但是没有完成，先把现场git stash一下，
 再去修改bug，修复完再git stash pop或者先git stash apply then gitstash drop，回到刚刚的现场。刚刚自己试验了一下，好像如果自己没有git add typing的那个file的话，git stash之后看git status还有那个
 没有git add的东西。不过刚刚没有好好控制变量，再改完那个所谓的bug之后，我就add并且commmit了那个本来typing的文件。。。不过应该是要先add的，以后有机会应该还会遇到这种情况的，到时候再试试看~
+
+如果新建的branch没有合并，但是已经没用了，想删掉的话就不能用git branch -d <name>了，-d => -D 才可以强行删除，不然会销毁失败，
+→error: The branch '???' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D '???'.
