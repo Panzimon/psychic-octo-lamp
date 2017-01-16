@@ -9,3 +9,11 @@
 · 命令git tag 可以查看所有标签
 
 · 补充一下百度到的git tag -d <tagname> 可以删除你想要删除的tag ~
+
+· 命令 git push origin <tagname> 可以推送一个本地标签；
+
+· 命令 git push origin --tags 可以推送全部未推送过的本地标签
+
+· 命令 git push origin :refs/tags/<tagname> 可以删除一个远程标签~
+
+p.s. GitHub上查看 tags 就是在 realeased 栏目看的 ~ 就是版本号那样啦 ~ 方便大家 ~
