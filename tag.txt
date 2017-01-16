@@ -1,0 +1,11 @@
+小结：
+
+· 命令 git tag <name> 用于新建一个标签，默认为 HEAD (也就是当前的最新commit)，也可以指定一个commit id ；
+
+· git tag -a <tagname> -m "blablabla"可以指定标签信息；
+
+· git tag -s <tagname> -m "blablabla"可以用PGP签名(因为用的是Windows Git bash，很便捷的自带gpg安装程序，然后百度了一下教程，一步步按照R大大的搞就OK了，注册生成你的key的时候‘用户ID’一定要记住是要和你GitHub的username一致，不然就要再来一次了，不要问我是怎么知道的=。=)标签；
+
+· 命令git tag 可以查看所有标签
+
+· 补充一下百度到的git tag -d <tagname> 可以删除你想要删除的tag ~
