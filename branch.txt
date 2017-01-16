@@ -12,3 +12,6 @@ git encourages people to use branch frequently ~
 
 删除分支：git branch -d <name>
 
+当Git无法自动合并分支，也就是两边都同时改了同一个文件的时候，他会在不同的地方提示，你需要按照自己需要，解决掉冲突。解决冲突之后，再提交，合并完成，最后删掉那个分支。
+
+用git log --gragh[ --pretty=oneline --abbrev-commit]命令可以看到分支合并图(简略显示)。
