@@ -12,6 +12,13 @@ git encourages people to use branch frequently ~
 
 删除分支：git branch -d <name>
 
-当Git无法自动合并分支，也就是两边都同时改了同一个文件的时候，他会在不同的地方提示，你需要按照自己需要，解决掉冲突。解决冲突之后，再提交，合并完成，最后删掉那个分支。
+当Git无法自动合并分支，也就是两边都同时改了同一个文件的时候，他
+会在不同的地方提示，你需要按照自己需要，解决掉冲突。解决冲突之后，再提交，合并完成，最后删掉那个分支。
 
 用git log --gragh[ --pretty=oneline --abbrev-commit]命令可以看到分支合并图(简略显示)。
+
+修改bug时，我们会通过新的bug分支进行修复，然后合并再删除。
+
+如果本来在typing一个file，但是没有完成，先把现场git stash一下，
+再去修改bug，修复完再git stash pop或者先git stash apply then gitstash drop，回到刚刚的现场。刚刚自己试验了一下，好像如果自己没有git add typing的那个file的话，git stash之后看git status还有那个
+没有git add的东西。不过刚刚没有好好控制变量，再改完那个所谓的bug之后，我就add并且commmit了那个本来typing的文件。。。不过应该是要先add的，以后有机会应该还会遇到这种情况的，到时候再试试看~
