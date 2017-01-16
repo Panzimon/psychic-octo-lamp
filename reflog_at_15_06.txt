@@ -1,0 +1,8 @@
+$ git reflog
+dc0b750 HEAD@{0}: reset: moving to dc0b750bf13375
+aef9f31 HEAD@{1}: reset: moving to aef9f31f8
+e43a8b0 HEAD@{2}: reset: moving to HEAD^
+dc0b750 HEAD@{3}: commit: GPL & tbc~
+e43a8b0 HEAD@{4}: commit: add distributed
+aef9f31 HEAD@{5}: commit (initial): vim wq a text after reading liao's guide
+
