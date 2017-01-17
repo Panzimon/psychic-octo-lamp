@@ -13,3 +13,7 @@ sth about .gitignore
 如果还是想强行加被保护的被ignore的文件的话就要git add -f filename.file了
 
 觉得.gitignore有问题的话就看看git check-ignore -v <yourfile>
+
+ build/    # 忽略 build/ 目录下的所有文件
+
+vim 里面ESC之后按u是撤回=。=
